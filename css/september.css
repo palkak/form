@@ -1,0 +1,31 @@
+body {
+  background: #ff0000; }
+
+.footer-details, .infoshare a {
+  text-transform: uppercase;
+  line-height: 20px; }
+
+.infoshare {
+  font-size: 20px;
+  text-decoration: underline;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cacaca;
+  border-radius: 5px; }
+  .infoshare .left {
+    text-align: left; }
+  .infoshare a {
+    color: #ff0000;
+    font-weight: 600; }
+    .infoshare a:hover {
+      color: #000000; }
+    .infoshare a > span {
+      border: none; }
+  .infoshare h1 {
+    font-size: 30px; }
+  .infoshare h2 {
+    font-size: 20px; }
+  .infoshare h3 {
+    font-size: 10px; }
+
+/*# sourceMappingURL=september.css.map */

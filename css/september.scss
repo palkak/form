@@ -1,0 +1,56 @@
+$primary-color: #ff0000;
+$secondary-color: #000000;
+$standard-padding: 5px;
+$standard-font-size: 10px;
+
+@mixin border ($thickness, $borderstyle, $color) {
+  border-width: $thickness;
+  border-style: $borderstyle;
+  border-color: $color;
+  border-radius: $thickness*5;
+}
+
+body {
+  background: $primary-color;
+
+}
+
+.footer-details {
+  text-transform: uppercase;
+  line-height:$standard-font-size*2;
+}
+
+.infoshare {
+  font-size: $standard-font-size*2;
+  text-decoration: underline;
+  @include border(1px, solid, #cacaca);
+
+  .left {
+    text-align: left;
+  }
+
+  a {
+    @extend .footer-details;
+    color: $primary-color;
+    font-weight: 600;
+    &:hover {
+      color: $secondary-color;
+    }
+    &>span {
+      border:none;
+    }
+  }
+
+  h1 {
+    font-size: $standard-font-size*3;
+  }
+
+  h2 {
+    font-size: $standard-font-size*2;
+  }
+
+  h3 {
+    font-size: $standard-font-size*1;
+  }
+
+}

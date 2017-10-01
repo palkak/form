@@ -1,0 +1,51 @@
+ody {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+#form-example {
+    margin-top: 100px;
+}
+input:valid {border: 2px solid lawngreen;}
+textarea:valid {border: 2px solid lawngreen;}
+input:valid + i::after {color:lawngreen; content:' OK'}
+input:invalid {border: 2px solid red}
+textarea:invalid {border: 2px solid red;}
+textarea:valid + i::after {color:lawngreen; content:' OK'}
+
+input[type="submit"]:valid {border: none;}
+
+#flex-section {
+    padding: 100px;
+}
+
+.flex-container {
+    height:700px;
+    width: 700px;
+    background: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.flex-item {
+    width: 200px;
+    height: 200px;
+}
+
+.box-red {
+    background: #ff0000;
+}
+.box-green {
+    background: lawngreen;
+
+}
+.box-blue {
+    background: royalblue;
+}
